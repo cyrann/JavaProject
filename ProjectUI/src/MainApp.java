@@ -24,22 +24,27 @@ public class MainApp extends Application{
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("StudentSys");
 
+//        StudentPageController spc = new StudentPageController();
+//        spc.showStudentPage();
+//        GuestPageController gpc = new GuestPageController();
+//        gpc.showGuestPage();
+        ReportController rc = new ReportController();
+        rc.showReport();
 
-
-        //加载FXML资源文件
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("StudentPage.fxml"));
-        Pane tempPane =  loader.load();
-//        ChangeStudentController asc = loader.getController();
-//        asc.setMainapp(this);
-
-        //构造对应的场景
-        Scene tempScene = new Scene(tempPane);
-
-        //添加场景到舞台中
-        primaryStage.setScene(tempScene);
-
-        //显示舞台
-        primaryStage.show();
+//        //加载FXML资源文件
+//        FXMLLoader loader = new FXMLLoader(getClass().getResource("StudentPage.fxml"));
+//        Pane tempPane =  loader.load();
+////        ChangeStudentController asc = loader.getController();
+////        asc.setMainapp(this);
+//
+//        //构造对应的场景
+//        Scene tempScene = new Scene(tempPane);
+//
+//        //添加场景到舞台中
+//        primaryStage.setScene(tempScene);
+//
+//        //显示舞台
+//        primaryStage.show();
 
     }
 

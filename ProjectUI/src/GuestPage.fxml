@@ -46,10 +46,10 @@
             <Label text="First name" GridPane.rowIndex="1" />
             <TextField fx:id="first" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="Last name" GridPane.rowIndex="2" />
-            <TextField fx:id="gender" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Label text="Gender" GridPane.rowIndex="3" />
             <TextField fx:id="guestID" GridPane.columnIndex="1" />
             <Label text="Reason for visiting" GridPane.rowIndex="4" />
+            <ChoiceBox fx:id="gender" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
       <Button fx:id="clear" layoutX="43.0" layoutY="528.0" mnemonicParsing="false" onAction="#clearText" text="CLEAR" />

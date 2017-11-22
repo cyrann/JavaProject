@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentPageController">
    <opaqueInsets>
@@ -39,25 +40,26 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ChoiceBox fx:id="reason" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
             <Label text="Student ID" />
+            <TextField fx:id="studentID" GridPane.columnIndex="1" />
+            <Label text="First name" GridPane.rowIndex="1" />
+            <TextField fx:id="first" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Last name" GridPane.rowIndex="2" />
             <TextField fx:id="last" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets />
                </GridPane.margin></TextField>
-            <Label text="First name" GridPane.rowIndex="1" />
-            <TextField fx:id="first" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label text="Last name" GridPane.rowIndex="2" />
-            <TextField fx:id="gender" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="DOB" GridPane.rowIndex="3" />
+            <DatePicker fx:id="dob" prefHeight="26.0" prefWidth="178.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Label text="Gender" GridPane.rowIndex="4" />
             <Label text="Program" GridPane.rowIndex="5" />
-            <Label text="DOB" GridPane.rowIndex="3" />
-            <TextField fx:id="program" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <Label text="Reason for visiting" GridPane.rowIndex="6" />
-            <DatePicker fx:id="dob" prefHeight="26.0" prefWidth="178.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField fx:id="studentID" GridPane.columnIndex="1" />
+            <ChoiceBox fx:id="reason" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ChoiceBox fx:id="gender" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ChoiceBox fx:id="program" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
          </children>
       </GridPane>
       <Button fx:id="clear" layoutX="46.0" layoutY="528.0" mnemonicParsing="false" onAction="#clearText" text="CLEAR" />
+      <Text fx:id="saveStatus" layoutX="93.0" layoutY="582.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="214.4000244140625" />
    </children>
 </AnchorPane>

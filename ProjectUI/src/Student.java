@@ -9,16 +9,15 @@ public class Student {
     LocalDate dob;
     String gender;
     String program;
-    String reason;
 
-    Student(String id, String first, String last, LocalDate dob, String gender, String program, String reason){
+
+    Student(String id, String first, String last, LocalDate dob, String gender, String program){
         this.studentID = id;
         this.first = first;
         this.last = last;
         this.dob = dob;
         this.gender = gender;
         this.program = program;
-        this.reason = reason;
     }
 
     public String getStudentID() {
@@ -69,15 +68,9 @@ public class Student {
         this.program = program;
     }
 
-    public String getReason() {
-        return reason;
-    }
 
-    public void setReason(String reason) {
-        this.reason = reason;
-    }
 
     public String toString(){
-        return first + last + studentID + dob + gender + program + reason;
+        return first + last + studentID + dob + gender + program;
     }
 }
